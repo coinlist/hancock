@@ -27,3 +27,9 @@ $ solana sign-offchain-message --keypair <keypair.json> "hey there"
 $ solana verify-offchain-signature --signer 4fwzf5RUcptqpMTYjNhXVuYabeX9bF1patCSYTkMufFN "hey there" 3zHMng1qyLHbPTBw1YxBVwJGBWhkqRrX6JipKqmWiT9P4oMEuacqdjvWEbHaG6CbMF6rYL4e22qkP7zcY8FP4Bfr
 Signature is valid
 ```
+
+### Celestia
+The [celestia-app](https://docs.celestia.org/how-to-guides/celestia-app-commands) CLI does not provide a way to sign arbitrary message out of the box.
+
+#### Example
+See [celestia/sign_message.go](celestia/sign_message.go)
