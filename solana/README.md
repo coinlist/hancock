@@ -21,5 +21,11 @@ Signature is valid
 ```
 
 #### If you are signing to be verified as a validator
-Remember that you will be signing with the private key whose Account counterpart is known to 
+Remember that you will be signing with the private key whose Address counterpart is known to 
 [this list](https://solscan.io/validator).
+
+##### Double Zero Token Sale for Validators
+In the `Address` field on the CoinList UI assure that you use the field mentioned above. That is,
+use the public key counterpart of the private key you are using to sign the message with.
+
+Also note that only validator accounts who were officially recognized as of March 31, 14:30 UTC will be accepted

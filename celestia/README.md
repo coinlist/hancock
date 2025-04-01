@@ -63,5 +63,11 @@ The program will output:
 * If the signature verification fails, the program will panic with "Invalid signature."
 
 #### If you are signing to be verified as a validator
-Remember that you will be signing with the private key whose consensus key counterpart is known to 
+Remember that you will be signing with the consensus private key whose public counterpart is known to 
 [this list](https://celestia.explorers.guru/validators).
+
+##### Double Zero Token Sale for Validators
+In the `Address` field on the CoinList UI assure that you use the field mentioned above. That is,
+use the address for the consensus private key you are using to sign the message with.
+
+Also note that only validator accounts who were officially recognized as of March 31, 14:30 UTC will be accepted

@@ -32,5 +32,11 @@ node index.js <key-scheme> <private_key> <message>
 * message: The message you want to sign.
 
 #### If you are signing to be verified as a validator
-Remember that you will be signing with the private key whose account counterpart is known to 
+Remember that you will be signing with the private key whose public counterpart is known to 
 [this list](https://suiscan.xyz/mainnet/validators).
+
+##### Double Zero Token Sale for Validators
+In the `Address` field on the CoinList UI assure that you use the field mentioned above. That is,
+use the address for private key you are using to sign the message with.
+
+Also note that only validator accounts who were officially recognized as of March 31, 14:30 UTC will be accepted
