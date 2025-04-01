@@ -8,17 +8,18 @@
 
 ## Steps
 1. From your `private-keys.yaml` get the consensus private key that is used by your node. And copy it to your clip board.
-   1. ```yaml
+   ```yaml
                  account_address: deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef
                  account_private_key: "0xcafebabecafebabecafebabecafebabecafebabecafebabecafebabecafebabe"
       THIS ONE ➤ consensus_private_key: "0xfa1s1f1ab1efa1s1f1ab1efa1s1f1ab1efa1s1f1ab1efa1s1f1ab1e1d01babe5"
                  full_node_network_private_key: "0xbaaaaaadb0bababebaaaaaadb0bababebaaaaaadb0bababebaaaaaadb0bababe"
                  validator_network_private_key: "0x0d15ea5e0d15ea5e0d15ea5e0d15ea5e0d15ea5e0d15ea5e0d15ea5e0d15ea5e"
       ```
-   1. In the above example the private key we want is
+   In the above example the private key we want is
       `0xfa1s1f1ab1efa1s1f1ab1efa1s1f1ab1efa1s1f1ab1efa1s1f1ab1e1d01babe5`
 1. Save it as a variable for ease of use later
-   1. `private_key="<private key value from step 1>"`
+   
+   `private_key="<private key value from step 1>"`
 1. Clone this git repo, and navigate to this directory
    ```bash
    git clone git@github.com:coinlist/hancock.git
