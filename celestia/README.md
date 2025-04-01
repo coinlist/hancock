@@ -62,6 +62,6 @@ The program will output:
 * If the private key is invalid or not base64-encoded, the program will panic with an error.
 * If the signature verification fails, the program will panic with "Invalid signature."
 
-##### Notes
-
-* Ensure the private key is securely stored and not shared publicly.
+#### If you are signing to be verified as a validator
+Remember that you will be signing with the private key whose consensus key counterpart is known to 
+[this list](https://celestia.explorers.guru/validators).

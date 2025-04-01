@@ -30,3 +30,7 @@ node index.js <key-scheme> <private_key> <message>
 * key-scheme: The key scheme to use (ed25519, secp256k1, or secp256r1).
 * private_key: The private key in the appropriate format for the chosen key scheme.
 * message: The message you want to sign.
+
+#### If you are signing to be verified as a validator
+Remember that you will be signing with the private key whose account counterpart is known to 
+[this list](https://suiscan.xyz/mainnet/validators).

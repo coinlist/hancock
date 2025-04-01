@@ -41,3 +41,7 @@ signature:  0x95093a0ac7fe99198c12882bc8240480b832c4bf12da2391e47c313c7028a2a1e4
 ```
 The signature field (`0x95093a0ac7fe99198c12882bc8240480b832c4bf12da2391e47c313c7028a2a1e46429a9c396d98ae7456c0fcbcd25090adb16bf47eabf7a4fae0b39bd344f60f197a1dfaad73199a478ec15faf6d1de5e940ef0206e47bee36dbca0d9ac69c6`)
 is the value that should be provided back to us to verify ownership.
+
+#### If you are signing to be verified as a validator
+Remember that you will be signing with the private key whose operator account counterpart is known to 
+[this list](https://explorer.aptoslabs.com/validators?network=mainnet).
