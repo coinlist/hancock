@@ -19,3 +19,7 @@ $ solana sign-offchain-message --keypair <keypair.json> "hey there"
 $ solana verify-offchain-signature --signer 4fwzf5RUcptqpMTYjNhXVuYabeX9bF1patCSYTkMufFN "hey there" 3zHMng1qyLHbPTBw1YxBVwJGBWhkqRrX6JipKqmWiT9P4oMEuacqdjvWEbHaG6CbMF6rYL4e22qkP7zcY8FP4Bfr
 Signature is valid
 ```
+
+#### If you are signing to be verified as a validator
+Remember that you will be signing with the private key whose Account counterpart is known to 
+[this list](https://solscan.io/validator).

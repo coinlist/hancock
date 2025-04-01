@@ -8,17 +8,18 @@
 
 ## Steps
 1. From your `private-keys.yaml` get the consensus private key that is used by your node. And copy it to your clip board.
-   1. ```yaml
+   ```yaml
                  account_address: deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef
                  account_private_key: "0xcafebabecafebabecafebabecafebabecafebabecafebabecafebabecafebabe"
       THIS ONE ➤ consensus_private_key: "0xfa1s1f1ab1efa1s1f1ab1efa1s1f1ab1efa1s1f1ab1efa1s1f1ab1e1d01babe5"
                  full_node_network_private_key: "0xbaaaaaadb0bababebaaaaaadb0bababebaaaaaadb0bababebaaaaaadb0bababe"
                  validator_network_private_key: "0x0d15ea5e0d15ea5e0d15ea5e0d15ea5e0d15ea5e0d15ea5e0d15ea5e0d15ea5e"
       ```
-   1. In the above example the private key we want is
+   In the above example the private key we want is
       `0xfa1s1f1ab1efa1s1f1ab1efa1s1f1ab1efa1s1f1ab1efa1s1f1ab1e1d01babe5`
 1. Save it as a variable for ease of use later
-   1. `private_key="<private key value from step 1>"`
+   
+   `private_key="<private key value from step 1>"`
 1. Clone this git repo, and navigate to this directory
    ```bash
    git clone git@github.com:coinlist/hancock.git
@@ -41,3 +42,7 @@ signature:  0x95093a0ac7fe99198c12882bc8240480b832c4bf12da2391e47c313c7028a2a1e4
 ```
 The signature field (`0x95093a0ac7fe99198c12882bc8240480b832c4bf12da2391e47c313c7028a2a1e46429a9c396d98ae7456c0fcbcd25090adb16bf47eabf7a4fae0b39bd344f60f197a1dfaad73199a478ec15faf6d1de5e940ef0206e47bee36dbca0d9ac69c6`)
 is the value that should be provided back to us to verify ownership.
+
+#### If you are signing to be verified as a validator
+Remember that you will be signing with the private key whose operator account counterpart is known to 
+[this list](https://explorer.aptoslabs.com/validators?network=mainnet).
