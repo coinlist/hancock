@@ -1,13 +1,12 @@
 import { Ed25519Keypair } from '@mysten/sui/keypairs/ed25519';
 import { Secp256k1Keypair } from '@mysten/sui/keypairs/secp256k1';
 import { Secp256r1Keypair } from '@mysten/sui/keypairs/secp256r1';
-import {sha256} from '@noble/hashes/sha256';
 import { verifyPersonalMessageSignature } from '@mysten/sui/verify';
 
 const getKeyPair = (keyScheme, privateKey) => {
     switch (keyScheme) {
         case 'ed25519':
-            return Ed25519Keypair.fromPrivateKey(privateKey);
+            return Ed25519Keypair.fromSecretKey(privateKey);
         case 'secp256k1':
             return Secp256k1Keypair.fromSecretKey(privateKey);
         case 'secp256r1':
@@ -35,12 +34,12 @@ async function signMessage() {
     const { signature } = await keypair.signPersonalMessage(messageBytes);
 
     console.log('Message:', message)
-    console.log('Public Key:', keypair.getPublicKey().toBase64());
+    console.log('Public Key:', keypair.getPublicKey().toSuiPublicKey());
     console.log('Signature:', signature);
 
     // 4. Verify signature
     const verifiedPubKey = await verifyPersonalMessageSignature(messageBytes, signature);
-    console.log('Verified (Public Key):', verifiedPubKey.toBase64());
+    console.log('Verified (Public Key):', verifiedPubKey.toSuiPublicKey());
 }
 
 signMessage().catch(console.error);
