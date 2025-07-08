@@ -1,8 +1,9 @@
 module celestia
 
 go 1.24.1
+
 require (
-	github.com/cosmos/cosmos-sdk v0.50.13
+	github.com/cosmos/cosmos-sdk v0.50.14
 	github.com/tendermint/tendermint v0.35.9
 )
 
